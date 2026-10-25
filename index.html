@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basurero Inteligente Separador de Desechos | Proyecto de Robótica</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Tipografías redondeadas y modernas (Outfit + DM Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- A. HEADER (Encabezado estilo barra flotante ecológica) -->
+    <header class="site-header">
+        <div class="header-pill">
+            <a href="#inicio" class="logo-area">
+                <img src="LOGO DEL COMPLEJO.jpg" alt="Logo Complejo Educativo Católico San Francisco" class="school-logo">
+                <div class="logo-titles">
+                    <span class="eco-tag">🌱 Robótica Ambiental</span>
+                    <h1>Basurero Inteligente</h1>
+                </div>
+            </a>
+
+            <nav class="main-nav" aria-label="Menú principal">
+                <ul>
+                    <li><a href="#ventajas">Ventajas</a></li>
+                    <li><a href="#elaboracion">¿Cómo se elaboró?</a></li>
+                    <li><a href="#funcionamiento">Funcionamiento</a></li>
+                    <li><a href="#prototipo">Prototipo</a></li>
+                    <li><a href="#integrantes">Integrantes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- B. MAIN (Contenido principal) -->
+    <main id="inicio">
+
+        <!-- Presentación Principal (Hero) -->
+        <section class="eco-hero">
+            <div class="wrapper hero-layout">
+                <div class="hero-text-box">
+                    <div class="pill-badge">♻️ Clasificación Automatizada con Arduino</div>
+                    <h2>Basurero Inteligente Separador de Desechos Húmedos y Secos</h2>
+                    <p>
+                        Contenedor inteligente automatizado que clasifica de forma autónoma los residuos entre <strong>orgánicos (húmedos)</strong> e <strong>inorgánicos (secos)</strong> sin intervención manual directa, promoviendo la higiene y la conciencia ambiental en hogares y centros educativos.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#ventajas" class="btn-eco-solid">Explorar beneficios</a>
+                        <a href="#elaboracion" class="btn-eco-outline">Ver materiales y armado</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="photo-frame">
+                        <img src="WhatsApp Image 2026-10-25 at 3.03.38 PM.jpeg" alt="Vista superior del Basurero Inteligente con sensores">
+                        <div class="floating-chip chip-top">💧 Sensor de Humedad FC-37</div>
+                        <div class="floating-chip chip-bottom">📡 Sensor HC-SR04 + Servomotor SG90</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 1: Ventajas del proyecto -->
+        <section id="ventajas" class="section-block">
+            <div class="wrapper">
+                <div class="title-group">
+                    <span class="eyebrow">Impacto Ambiental y Social</span>
+                    <h2>Ventajas del Proyecto</h2>
+                    <p>
+                        Una solución tecnológica enfocada en erradicar la contaminación cruzada y optimizar el manejo de residuos desde su origen.
+                    </p>
+                </div>
+
+                <div class="bento-grid">
+                    <article class="bento-card bento-large">
+                        <div class="bento-icon">🌍</div>
+                        <h3>Problema que Resuelve</h3>
+                        <p>
+                            Soluciona el problema de la <strong>contaminación cruzada</strong> y la falta de separación eficiente de la basura en hogares y escuelas. Al mezclar desechos húmedos con secos, materiales que podrían reciclarse se deterioran y pierden su valor de aprovechamiento.
+                        </p>
+                    </article>
+
+                    <article class="bento-card">
+                        <div class="bento-icon">🤖</div>
+                        <h3>Utilidad Automatizada</h3>
+                        <p>
+                            Clasifica de forma automática los residuos entre <strong>orgánicos (húmedos)</strong> e <strong>inorgánicos (secos)</strong> mediante sensores electrónicos, depositándolos en compartimentos independientes.
+                        </p>
+                    </article>
+
+                    <article class="bento-card">
+                        <div class="bento-icon">🧼</div>
+                        <h3>Higiene y Cero Contacto</h3>
+                        <p>
+                            Opera sin intervención manual directa en la selección del residuo, reduciendo el contacto con focos de bacterias y mejorando la salubridad del entorno escolar y doméstico.
+                        </p>
+                    </article>
+
+                    <article class="bento-card bento-wide">
+                        <div class="bento-icon">🌿</div>
+                        <h3>Fomento de la Conciencia Ambiental</h3>
+                        <p>
+                            Educa de manera práctica e interactiva a los estudiantes y familias sobre la importancia de clasificar los desechos, facilitando el reciclaje de materiales secos y el compostaje de residuos orgánicos.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: ¿Cómo se elaboró? (Materiales, Construcción, Funcionamiento y Software) -->
+        <section id="elaboracion" class="section-block bg-mint">
+            <div class="wrapper">
+                <div class="title-group">
+                    <span class="eyebrow">Ingeniería y Construcción</span>
+                    <h2>¿Cómo se elaboró?</h2>
+                    <p>
+                        Conoce los componentes electrónicos, materiales estructurales, el diseño del chasis y la lógica de programación empleada en el prototipo.
+                    </p>
+                </div>
+
+                <!-- Materiales y Componentes en tarjetas categorizadas -->
+                <div class="materials-split">
+                    <div class="material-panel">
+                        <div class="panel-header">
+                            <span class="panel-icon">🔌</span>
+                            <div>
+                                <h3>Componentes Electrónicos</h3>
+                                <p>Hardware de detección, control y movimiento</p>
+                            </div>
+                        </div>
+                        <ul class="check-list">
+                            <li><strong>Placa Arduino Uno:</strong> Microcontrolador central encargado de procesar las lecturas y accionar el sistema.</li>
+                            <li><strong>Sensor de movimiento HC-SR04:</strong> Módulo ultrasónico para detección de proximidad y presencia.</li>
+                            <li><strong>Sensor de humedad/lluvia FC-37:</strong> Sonda detectora que evalúa el nivel de humedad del residuo depositado.</li>
+                            <li><strong>Micro servomotor SG90:</strong> Actuador rotativo que inclina la bandeja hacia el compartimento correspondiente.</li>
+                            <li><strong>Protoboard:</strong> Placa de pruebas para la distribución ordenada de conexiones eléctricas.</li>
+                            <li><strong>Cables jumper:</strong> Conductores para enlazar la placa Arduino, los sensores y el servomotor.</li>
+                        </ul>
+                    </div>
+
+                    <div class="material-panel">
+                        <div class="panel-header">
+                            <span class="panel-icon">📦</span>
+                            <div>
+                                <h3>Materiales Estructurales y Diseño</h3>
+                                <p>Construcción física y acabado del contenedor</p>
+                            </div>
+                        </div>
+                        <div class="structural-tags">
+                            <span class="s-tag">📦 Cartón estructurado</span>
+                            <span class="s-tag">📄 Páginas de papel bond</span>
+                            <span class="s-tag">🥢 Palillos de soporte</span>
+                            <span class="s-tag">✨ Revestimiento de aluminio</span>
+                        </div>
+                        <div class="construction-box">
+                            <h4>📐 Diseño y Construcción del Chasis</h4>
+                            <p>
+                                Se construyó un <strong>chasis vertical de cartón estructurado y reforzado</strong>, dividido internamente en dos compartimentos independientes (uno para desechos húmedos y otro para secos).
+                            </p>
+                            <p>
+                                En la parte superior se adaptó una tolva con una <strong>rampa inclinada revestida de aluminio</strong>, donde el micro servomotor SG90 mueve una bandeja deflectora para direccionar los desechos hacia su depósito correspondiente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proceso y Funcionamiento paso a paso -->
+                <div id="funcionamiento" class="timeline-container">
+                    <h3 class="sub-heading">⚙️ Proceso y Funcionamiento Paso a Paso</h3>
+                    <div class="timeline-steps">
+                        <div class="t-step">
+                            <div class="t-badge">Paso 1</div>
+                            <h4>Calibración Automática Inicial</h4>
+                            <p>
+                                Al encender el sistema conectando la fuente de alimentación a la placa Arduino Uno, el equipo realiza una calibración automática posicionando la bandeja deflectora en el centro.
+                            </p>
+                        </div>
+
+                        <div class="t-step">
+                            <div class="t-badge">Paso 2</div>
+                            <h4>Evaluación con Sensor FC-37</h4>
+                            <p>
+                                El usuario deposita el residuo sobre la rampa superior y el <strong>sensor de humedad/lluvia (FC-37)</strong> evalúa al instante las propiedades físicas y conductivas del desecho.
+                            </p>
+                        </div>
+
+                        <div class="t-step">
+                            <div class="t-badge">Paso 3</div>
+                            <h4>Separación Inteligente (Húmedo / Seco)</h4>
+                            <p>
+                                El micro servomotor SG90 se acciona y gira la bandeja hacia la <strong>izquierda (si es húmedo/orgánico)</strong> o hacia la <strong>derecha (si es seco/inorgánico)</strong> para que caiga en su contenedor respectivo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Software y Programación -->
+                <div class="software-banner">
+                    <div class="sw-info">
+                        <span class="sw-badge">💻 Entorno de Programación y Simulación</span>
+                        <h3>¿En qué programa se realizó el código?</h3>
+                        <p>
+                            El código de control se desarrolló, simuló y programó utilizando el entorno oficial <strong>Arduino IDE</strong> y la plataforma <strong>Tinkercad</strong>, empleando el lenguaje de programación <strong>C++</strong> junto con la librería estándar para el control preciso de grados del servomotor.
+                        </p>
+                    </div>
+                    <div class="sw-pills">
+                        <div class="sw-pill">Arduino IDE</div>
+                        <div class="sw-pill">Autodesk Tinkercad</div>
+                        <div class="sw-pill">Lenguaje C++</div>
+                        <div class="sw-pill">Librería Estándar</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERÍA VISUAL DEL PROTOTIPO -->
+        <section id="prototipo" class="section-block">
+            <div class="wrapper">
+                <div class="title-group">
+                    <span class="eyebrow">Evidencia Real del Proyecto</span>
+                    <h2>Vistas del Prototipo Construido</h2>
+                    <p>
+                        Fotografías del ensamblaje estructural y del circuito electrónico montado sobre el contenedor inteligente.
+                    </p>
+                </div>
+
+                <div class="showcase-grid">
+                    <figure class="showcase-card">
+                        <div class="img-container">
+                            <img src="WhatsApp Image 2026-10-25 at 3.03.38 PM.jpeg" alt="Bandeja superior y sensores del Basurero Inteligente">
+                        </div>
+                        <figcaption>
+                            <span class="photo-tag">Vista Superior y Sensores</span>
+                            <h3>Bandeja Deflectora y Módulo de Detección</h3>
+                            <p>
+                                Rampa superior de cartón con el sensor de humedad FC-37 instalado sobre la superficie de contacto, acompañado en la parte superior por el sensor ultrasónico HC-SR04 y el servomotor SG90.
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="showcase-card">
+                        <div class="img-container">
+                            <img src="WhatsApp Image 2026-10-25 at 3.03.38 PM (1).jpeg" alt="Circuito electrónico con Arduino Uno y Protoboard">
+                        </div>
+                        <figcaption>
+                            <span class="photo-tag">Sistema Electrónico</span>
+                            <h3>Placa Arduino Uno, Protoboard y Cableado</h3>
+                            <p>
+                                Montaje posterior del circuito de control con la placa Arduino Uno conectada vía USB, módulo comparador del sensor FC-37, protoboard y cables jumper distribuidos hacia los actuadores.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: Integrantes del proyecto -->
+        <section id="integrantes" class="section-block bg-mint">
+            <div class="wrapper">
+                <div class="title-group">
+                    <span class="eyebrow">Autores del Proyecto</span>
+                    <h2>Integrantes del Grupo</h2>
+                    <p>
+                        Equipo estudiantil encargado del diseño estructural, ensamblaje electrónico, programación y presentación del Basurero Inteligente.
+                    </p>
+                </div>
+
+                <div class="members-grid">
+                    <article class="member-card">
+                        <div class="member-icon">👩‍🔬</div>
+                        <div class="member-details">
+                            <h3>Méndez Díaz Keisi Nadine</h3>
+                            <span class="nie-badge">NIE: 3983937</span>
+                            <p>Integrante del Proyecto de Robótica</p>
+                        </div>
+                    </article>
+
+                    <article class="member-card">
+                        <div class="member-icon">👩‍💻</div>
+                        <div class="member-details">
+                            <h3>López González Fátima Daniela</h3>
+                            <span class="nie-badge">NIE: 19930365</span>
+                            <p>Integrante del Proyecto de Robótica</p>
+                        </div>
+                    </article>
+
+                    <article class="member-card">
+                        <div class="member-icon">👨‍🔧</div>
+                        <div class="member-details">
+                            <h3>David Iván Ascencio Cornejo</h3>
+                            <span class="nie-badge">NIE: 19783061</span>
+                            <p>Integrante del Proyecto de Robótica</p>
+                        </div>
+                    </article>
+
+                    <article class="member-card">
+                        <div class="member-icon">👨‍💻</div>
+                        <div class="member-details">
+                            <h3>Welman Isaías Reyes Marroquín</h3>
+                            <span class="nie-badge">NIE: 19954441</span>
+                            <p>Integrante del Proyecto de Robótica</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- C. FOOTER (Pie de página institucional) -->
+    <footer class="eco-footer">
+        <div class="wrapper">
+            <div class="footer-top">
+                <div class="footer-identity">
+                    <img src="LOGO DEL COMPLEJO.jpg" alt="Logo Complejo Educativo Católico San Francisco" class="footer-seal">
+                    <div>
+                        <h2>Complejo Educativo Católico “San Francisco”</h2>
+                        <p class="institutional-quote">
+                            “Inspirados por San Francisco, unimos nuestros talentos para construir puentes y derribar muros.”
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-meta">
+                <div class="meta-box">
+                    <span class="meta-title">Docente</span>
+                    <strong>Lic. Carlos M. Galdámez</strong>
+                </div>
+                <div class="meta-box">
+                    <span class="meta-title">Proyecto de Robótica</span>
+                    <strong>Basurero Inteligente Separador de Desechos</strong>
+                </div>
+                <div class="meta-box">
+                    <span class="meta-title">Asignatura</span>
+                    <strong>Informática</strong>
+                </div>
+                <div class="meta-box">
+                    <span class="meta-title">Año de Elaboración</span>
+                    <strong>2026</strong>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
